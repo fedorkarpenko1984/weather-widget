@@ -1,2 +1,2 @@
 # weather-widget
-Weather widget web component on Vue.js
+Weather widget web component
