@@ -1,0 +1,31 @@
+{
+    "name": "weather-widget",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack serve --mode development",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.18.13",
+        "@babel/preset-env": "^7.18.10",
+        "babel-loader": "^8.2.5",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.7.1",
+        "hot-module-replacement": "^3.0.4",
+        "html-webpack-plugin": "^5.5.0",
+        "node-sass": "^7.0.1",
+        "postcss-loader": "^7.0.1",
+        "postcss-preset-env": "^7.8.0",
+        "sass-loader": "^13.0.2",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.74.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.10.1"
+    },
+    "dependencies": {}
+}
