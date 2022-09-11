@@ -7,7 +7,7 @@ function addLocation(input, locationsDOMElement) {
 
     if (input.value.trim() === '') return
     const city = input.value.trim()
-    fetch(`https://geocode-maps.yandex.ru/1.x/?format=json&lang=en_RU&apikey=b35066c3-a231-48ff-ab4d-38849066f867&geocode=${city}`)
+    fetch(`https://geocode-maps.yandex.ru/1.x/?format=json&lang=en_RU&apikey=%Yandex Maps API key%&geocode=${city}`)
         .then(response => response.json())
         .then(response => {
             const data = response.response.GeoObjectCollection.featureMember[0].GeoObject
