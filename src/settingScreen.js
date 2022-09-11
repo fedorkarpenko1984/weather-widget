@@ -95,14 +95,11 @@ export function settingsScreen(component) {
     locationsDOMElement.addEventListener(`dragend`, event => {
         const locations = JSON.parse(localStorage[localStorageKey])
 
-        let locationCards = []
+        let newLocations = []
         for (let locationCard of locationsDOMElement.children) {
-            locationCards.push(locationCard)
-        }
-        const newLocations = locationCards.map(locationCard => {
             const locationCardCity = locationCard.querySelector('p').textContent.split(',')[0]
-            return locations.find(location => location.city === locationCardCity)
-        })
+            newLocations.push(locations.find(location => location.city === locationCardCity))
+        }
         localStorage[localStorageKey] = JSON.stringify(newLocations)
 
         event.target.classList.remove(`selected`);
