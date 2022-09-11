@@ -16,7 +16,7 @@ const geolocation = new Promise((resolve, reject) => {
 
 
 const weatherUrlCreator = (latitude, longitude, lang = 'en') => {
-    return `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&units=metric&lon=${longitude}&lang=${lang}&appid=3d70f3c90fb210f3a6d80e0221e4b2fb`
+    return `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&units=metric&lon=${longitude}&lang=${lang}&appid=%API ключ openweathermap%`
 }
 
 // component - экземпляр вебкомпонента, который передаётся из index.js
